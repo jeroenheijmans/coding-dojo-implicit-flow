@@ -17,6 +17,7 @@ Prerequisites:
 Optionally grab the `.gitignore` from this repository and use it during the dojo steps, below.
 
 > ⚠️ If you get stuck, have a look at the `solution-v1.0.0` branch!
+> Each "Part" (sections below) is tagged in that branch, if you want to "pick up" the code at a specific point.
 
 Let's get started!
 
