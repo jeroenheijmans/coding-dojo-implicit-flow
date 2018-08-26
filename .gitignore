@@ -1,0 +1,23 @@
+# System stuff
+**/.DS_Store
+**/Thumbs.db
+
+# IDEs
+**/.vscode
+**/*.suo
+**/.idea
+
+# .NET
+**/[Dd]ebug/
+**/[Dd]ebugPublic/
+**/[Rr]elease/
+**/[Rr]eleases/
+**/[Oo]bj/
+**/[Bb]in/
+**/.vs/
+
+## Angular
+/node_modules
+/dist
+/tmp
+/out-tsc
