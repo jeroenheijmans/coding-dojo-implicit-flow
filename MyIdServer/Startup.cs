@@ -52,7 +52,7 @@ namespace MyIdServer
                             StandardScopes.Email,
                         },
                         AllowedCorsOrigins = { "http://localhost:4200", },
-                        RedirectUris = { "http://localhost:4200/", },
+                        RedirectUris = { "http://localhost:4200/", "http://localhost:4200/silent-refresh.html" },
                         PostLogoutRedirectUris = { "http://localhost:4200/", },
                     }
                 })

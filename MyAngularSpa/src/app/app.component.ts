@@ -7,6 +7,7 @@ import { OAuthService, OAuthErrorEvent } from 'angular-oauth2-oidc';
     <h1>Angular OAuth2 OIDC Test App</h1>
     <p>
       <button (click)="clear()">Clear LocalStorage</button>
+      <button (click)="refresh()">Try Silent Refresh</button>
       <button (click)="login()">Log in</button>
     </p>
     <p>Token:</p>
@@ -27,6 +28,7 @@ export class AppComponent {
       });
   }
 
+  refresh() { this.oauthService.silentRefresh(); }
   login() { this.oauthService.initImplicitFlow(); }
   clear() { localStorage.clear(); }
 }

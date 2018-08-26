@@ -9,6 +9,7 @@ const myConfig: AuthConfig = {
   issuer: 'https://localhost:44385',
   clientId: 'angular-spa-001',
   redirectUri: window.location.origin + '/',
+  silentRefreshRedirectUri: window.location.origin + '/silent-refresh.html',
   scope: 'openid profile email',
 };
 
