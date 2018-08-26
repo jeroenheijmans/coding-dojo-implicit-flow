@@ -11,13 +11,20 @@ import { OAuthService, OAuthErrorEvent } from 'angular-oauth2-oidc';
     </p>
     <p>Token:</p>
     <pre>{{oauthService.getAccessToken()}}</pre>
+    <p>Claims:</p>
+    <pre>{{oauthService.getIdentityClaims() | json}}</pre>
   `,
   styles: []
 })
 export class AppComponent {
   constructor(public oauthService: OAuthService) {
     this.oauthService.events.subscribe(event => event instanceof OAuthErrorEvent ? console.error(event) : console.warn(event));
-    this.oauthService.loadDiscoveryDocument();
+    this.oauthService
+      .loadDiscoveryDocument()
+      .then(() => {
+        console.table((location.hash || '').split('&'));
+        return this.oauthService.tryLogin();
+      });
   }
 
   login() { this.oauthService.initImplicitFlow(); }

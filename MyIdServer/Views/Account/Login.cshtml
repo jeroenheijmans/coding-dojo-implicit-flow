@@ -1,0 +1,14 @@
+﻿@model MyIdServer.Models.LoginModel
+
+<h1>Login</h1>
+<div asp-validation-summary="All" style="color: red;"></div>
+<form asp-route="Login">
+    <p><input asp-for="ReturnUrl"> (normally hidden input)</p>
+    <p><input asp-for="Username" autofocus placeholder="Username" required>*</p>
+    <p><input asp-for="Password" type="password" placeholder="Password" required>*</p>
+    <p><label><input asp-for="RememberMe" type="checkbox"> Remember login</label></p>
+    <p>
+        <button name="action" value="login">Log in</button>
+        <button name="action" value="cancel">Cancel</button>
+    </p>
+</form>

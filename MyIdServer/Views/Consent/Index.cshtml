@@ -1,0 +1,9 @@
+﻿@model MyIdServer.Models.ConsentModel
+
+<h2>Index</h2>
+<form asp-route="Index">
+    <p>Dummy view where you have to blindly consent to everything.</p>
+    <p><input asp-for="ReturnUrl"> (normally hidden input)</p>
+    <p><label><input type="checkbox" asp-for="AgreesBlindlyToEverything"> Consent to all the things</label></p>
+    <p><button name="action" value="consent">Consent</button></p>
+</form>

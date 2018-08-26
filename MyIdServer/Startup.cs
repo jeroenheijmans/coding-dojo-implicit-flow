@@ -66,7 +66,7 @@ namespace MyIdServer
                 {
                     new TestUser
                     {
-                        SubjectId = Guid.NewGuid().ToString(),
+                        SubjectId = "fake-guid-123",
                         Username = "mary",
                         Password = "Secret123!",                        
                     },
@@ -91,7 +91,7 @@ namespace MyIdServer
             app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseMvcWithDefaultRoute();
         }
     }
 }
