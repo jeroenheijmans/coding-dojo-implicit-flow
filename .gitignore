@@ -15,6 +15,7 @@
 **/[Oo]bj/
 **/[Bb]in/
 **/.vs/
+**/tempkey.rsa
 
 ## Angular
 /node_modules
