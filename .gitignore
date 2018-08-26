@@ -18,7 +18,7 @@
 **/tempkey.rsa
 
 ## Angular
-/node_modules
-/dist
-/tmp
-/out-tsc
+**/node_modules
+**/dist
+**/tmp
+**/out-tsc
