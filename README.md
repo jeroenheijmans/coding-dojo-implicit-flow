@@ -37,7 +37,7 @@ cd dojo-implicit-flow
 # Create ID Server folder and solution
 mkdir MyIdServer
 cd MyIdServer
-dotnet net webapi
+dotnet new webapi
 ```
 
 The effect of this setup is that we also get a `ValuesController` in a scaffolded Web API.
