@@ -2,6 +2,10 @@
 
 This workshop leads you to create an OAuth2 and OpenID Connect Identity Server, and an Angular SPA that uses Implicit flow to let users log in using that ID Server.
 
+## ⚠️ Notice about updates
+
+Note that this repository is provided "as-is" and will most likely not receive any (security) updates.
+
 ## Introduction
 
 This Dojo shows you how the OAuth2 "Implicit Flow" works.
